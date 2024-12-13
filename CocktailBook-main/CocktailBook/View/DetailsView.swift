@@ -70,7 +70,7 @@ struct DetailsView: View {
                     ForEach(viewModel.cocktail.ingredients, id: \.self) { ingredient in
                         HStack(alignment: .center, spacing: 8) {
                             Circle()
-                                .fill(Color.black)
+                                .fill(Color.primary)
                                 .frame(width: 8, height: 8)
 
                             Text(ingredient)
