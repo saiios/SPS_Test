@@ -19,14 +19,7 @@ class DetailsViewUITests: XCTestCase {
         
         let cocktailBookListButton = app.buttons["Cocktail Book List"]
         
-        XCTAssertTrue(cocktailBookListButton.waitForExistence(timeout: 15))
-        cocktailBookListButton.tap()
-        
-        XCTAssertTrue(cocktailBookListButton.waitForExistence(timeout: 15))
-        cocktailBookListButton.tap()
-        
-        XCTAssertTrue(cocktailBookListButton.waitForExistence(timeout: 15))
-        cocktailBookListButton.tap()
+        TestHelper.tapButtonWithRetry(cocktailBookListButton, retries: 3, timeout: 15)
         
         let firstCocktailCell = app.collectionViews.cells.element(boundBy: 0)
 

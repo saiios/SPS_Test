@@ -13,21 +13,14 @@ class CocktailBookUITests: XCTestCase {
         
         let cocktailBookListButton = app.buttons["Cocktail Book List"]
         
-        XCTAssertTrue(cocktailBookListButton.waitForExistence(timeout: 15))
-        cocktailBookListButton.tap()
-        
-        XCTAssertTrue(cocktailBookListButton.waitForExistence(timeout: 15))
-        cocktailBookListButton.tap()
-        
-        XCTAssertTrue(cocktailBookListButton.waitForExistence(timeout: 15))
-        cocktailBookListButton.tap()
+        TestHelper.tapButtonWithRetry(cocktailBookListButton, retries: 3, timeout: 15)
     }
 
     override func tearDown() {
         super.tearDown()
         app.terminate()
     }
-
+    
     // Test if the main view displays the list of cocktails
     func testCocktailListIsDisplayed() {
         let list = app.collectionViews["Cocktail Book List"]
