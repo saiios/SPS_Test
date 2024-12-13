@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 class FavoritesViewModel: ObservableObject {
     @Published var favoriteCocktails: Set<String> = [] {
@@ -14,6 +15,7 @@ class FavoritesViewModel: ObservableObject {
         }
     }
 
+    private var cancellables: Set<AnyCancellable> = []
     private let favoritesKey = "FavoriteCocktails"
 
     init() {

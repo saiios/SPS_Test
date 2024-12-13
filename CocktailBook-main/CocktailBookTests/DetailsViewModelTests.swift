@@ -28,4 +28,12 @@ class DetailsViewModelTests: XCTestCase {
 
         XCTAssertFalse(isFavoriteState, "Cocktail should now be unmarked as a favorite.")
     }
+
+    // Test if the initial favorite state is correctly set
+    func testInitialFavoriteState() {
+        let cocktail = Cocktail(id: "4", name: "Cosmopolitan", type: "alcoholic", shortDescription: "Classic Cosmopolitan", longDescription: "Classic cocktail description", preparationMinutes: 5, imageName: "cosmopolitan", ingredients: ["Vodka", "Triple Sec"])
+        let detailsViewModel = DetailsViewModel(cocktail: cocktail, isFavorite: true)
+
+        XCTAssertTrue(detailsViewModel.isFavorite, "Cocktail should be marked as a favorite initially.")
+    }
 }

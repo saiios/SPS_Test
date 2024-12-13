@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 class DetailsViewModel: ObservableObject {
     let cocktail: Cocktail
@@ -21,3 +22,4 @@ class DetailsViewModel: ObservableObject {
         onFavoriteToggle(isFavorite)
     }
 }
+

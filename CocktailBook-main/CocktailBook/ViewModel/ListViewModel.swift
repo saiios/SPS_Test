@@ -24,6 +24,7 @@ class ListViewModel: ObservableObject {
     }
 
     private let api: CocktailsAPI
+    private var cancellables: Set<AnyCancellable> = []
     private let favoritesKey = "FavoriteCocktails"
 
     init(api: CocktailsAPI = FakeCocktailsAPI(withFailure: .count(3))) {
@@ -32,28 +33,35 @@ class ListViewModel: ObservableObject {
         fetchCocktails()
     }
 
-    // Fetch cocktails from API
+    // Fetch cocktails from API using Combine
     func fetchCocktails() {
         isLoading = true
         errorMessage = nil
-        api.fetchCocktails { result in
-            DispatchQueue.main.async {
-                self.isLoading = false
-                switch result {
-                case .success(let data):
+        
+        api.cocktailsPublisher
+            .sink(receiveCompletion: { completion in
+                DispatchQueue.main.async {
+                    self.isLoading = false
+                    switch completion {
+                    case .failure(let error):
+                        if let apiError = error as? CocktailsAPIError, apiError == .unavailable {
+                            self.errorMessage = "The cocktail service is currently unavailable. Please try again."
+                        }
+                    case .finished:
+                        break
+                    }
+                }
+            }, receiveValue: { data in
+                DispatchQueue.main.async {
                     do {
                         self.allCocktails = try JSONDecoder().decode([Cocktail].self, from: data)
                         self.applyFilter()
                     } catch {
                         self.errorMessage = "Failed to decode cocktails."
                     }
-                case .failure(let error):
-                    if let apiError = error as? CocktailsAPIError, apiError == .unavailable {
-                        self.errorMessage = "The cocktail service is currently unavailable. Please try again."
-                    }
                 }
-            }
-        }
+            })
+            .store(in: &cancellables)
     }
 
     // Apply selected filter and sort favorites to the top
