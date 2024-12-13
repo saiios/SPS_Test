@@ -72,7 +72,7 @@ The project includes unit tests for ViewModels and API interactions and UI tests
 
 Clone the repository:
 
-git clone https://github.com/wios8/CocktailBook.git
+git clone https://github.com/saiios/SPS_Test.git
 
 Open CocktailBook.xcodeproj in Xcode.
 
