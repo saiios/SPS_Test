@@ -110,6 +110,10 @@ Swift 5.0+
 
 Include relevant screenshots of the app here (e.g., list view, detailed view, loading indicator).
 
+![Simulator Screenshot - iPhone 16 Pro - 2024-12-13 at 13 51 57](https://github.com/user-attachments/assets/a23dbf44-3012-4c14-871e-6f075201eaf7)
+
+![Simulator Screenshot - iPhone 16 Pro - 2024-12-13 at 13 52 04](https://github.com/user-attachments/assets/30d8de36-8522-414b-8ac2-e18812d845b4)
+
 
 **Testing**
 
