@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180E0D412D0BDF58009C560A /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E0D3E2D0BDF58009C560A /* FavoritesViewModel.swift */; };
+		180E0D422D0BDF58009C560A /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E0D372D0BDF58009C560A /* NavigationBarModifier.swift */; };
+		180E0D432D0BDF58009C560A /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E0D3A2D0BDF58009C560A /* DetailsView.swift */; };
+		180E0D442D0BDF58009C560A /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E0D3F2D0BDF58009C560A /* ListViewModel.swift */; };
+		180E0D452D0BDF58009C560A /* Cocktail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E0D322D0BDF58009C560A /* Cocktail.swift */; };
+		180E0D462D0BDF58009C560A /* CocktailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E0D392D0BDF58009C560A /* CocktailRow.swift */; };
+		180E0D472D0BDF58009C560A /* CocktailFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E0D352D0BDF58009C560A /* CocktailFilter.swift */; };
+		180E0D482D0BDF58009C560A /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E0D3B2D0BDF58009C560A /* ListView.swift */; };
+		180E0D492D0BDF58009C560A /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E0D342D0BDF58009C560A /* ActivityIndicator.swift */; };
+		180E0D4A2D0BDF58009C560A /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E0D362D0BDF58009C560A /* LoadingIndicator.swift */; };
+		180E0D4B2D0BDF58009C560A /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E0D3D2D0BDF58009C560A /* DetailsViewModel.swift */; };
+		180E0D4E2D0BE007009C560A /* ListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E0D4D2D0BE007009C560A /* ListViewModelTests.swift */; };
+		180E0D4F2D0BE007009C560A /* DetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E0D4C2D0BE007009C560A /* DetailsViewModelTests.swift */; };
+		180E0D512D0BE03B009C560A /* DetailsViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E0D502D0BE03B009C560A /* DetailsViewUITests.swift */; };
 		E8324E7A262076EB00FD2124 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8324E79262076EB00FD2124 /* AppDelegate.swift */; };
 		E8324E7C262076EB00FD2124 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8324E7B262076EB00FD2124 /* SceneDelegate.swift */; };
 		E8324E80262076EE00FD2124 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8324E7F262076EE00FD2124 /* Assets.xcassets */; };
@@ -38,6 +52,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180E0D322D0BDF58009C560A /* Cocktail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cocktail.swift; sourceTree = "<group>"; };
+		180E0D342D0BDF58009C560A /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		180E0D352D0BDF58009C560A /* CocktailFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailFilter.swift; sourceTree = "<group>"; };
+		180E0D362D0BDF58009C560A /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		180E0D372D0BDF58009C560A /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
+		180E0D392D0BDF58009C560A /* CocktailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailRow.swift; sourceTree = "<group>"; };
+		180E0D3A2D0BDF58009C560A /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		180E0D3B2D0BDF58009C560A /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		180E0D3D2D0BDF58009C560A /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		180E0D3E2D0BDF58009C560A /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		180E0D3F2D0BDF58009C560A /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		180E0D4C2D0BE007009C560A /* DetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModelTests.swift; sourceTree = "<group>"; };
+		180E0D4D2D0BE007009C560A /* ListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModelTests.swift; sourceTree = "<group>"; };
+		180E0D502D0BE03B009C560A /* DetailsViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewUITests.swift; sourceTree = "<group>"; };
 		E8324E76262076EB00FD2124 /* CocktailBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocktailBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8324E79262076EB00FD2124 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8324E7B262076EB00FD2124 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +110,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180E0D332D0BDF58009C560A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				180E0D322D0BDF58009C560A /* Cocktail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		180E0D382D0BDF58009C560A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				180E0D342D0BDF58009C560A /* ActivityIndicator.swift */,
+				180E0D352D0BDF58009C560A /* CocktailFilter.swift */,
+				180E0D362D0BDF58009C560A /* LoadingIndicator.swift */,
+				180E0D372D0BDF58009C560A /* NavigationBarModifier.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		180E0D3C2D0BDF58009C560A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				180E0D392D0BDF58009C560A /* CocktailRow.swift */,
+				180E0D3A2D0BDF58009C560A /* DetailsView.swift */,
+				180E0D3B2D0BDF58009C560A /* ListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		180E0D402D0BDF58009C560A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				180E0D3D2D0BDF58009C560A /* DetailsViewModel.swift */,
+				180E0D3E2D0BDF58009C560A /* FavoritesViewModel.swift */,
+				180E0D3F2D0BDF58009C560A /* ListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		E8324E6D262076EB00FD2124 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +174,10 @@
 			isa = PBXGroup;
 			children = (
 				E8324E79262076EB00FD2124 /* AppDelegate.swift */,
+				180E0D332D0BDF58009C560A /* Model */,
+				180E0D382D0BDF58009C560A /* Utilities */,
+				180E0D3C2D0BDF58009C560A /* View */,
+				180E0D402D0BDF58009C560A /* ViewModel */,
 				E8324E7B262076EB00FD2124 /* SceneDelegate.swift */,
 				E8324E7F262076EE00FD2124 /* Assets.xcassets */,
 				E8324E84262076EE00FD2124 /* LaunchScreen.storyboard */,
@@ -120,6 +191,8 @@
 			isa = PBXGroup;
 			children = (
 				E8324E90262076EE00FD2124 /* CocktailBookTests.swift */,
+				180E0D4C2D0BE007009C560A /* DetailsViewModelTests.swift */,
+				180E0D4D2D0BE007009C560A /* ListViewModelTests.swift */,
 				E8324E92262076EE00FD2124 /* Info.plist */,
 			);
 			path = CocktailBookTests;
@@ -129,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				E8324E9B262076EE00FD2124 /* CocktailBookUITests.swift */,
+				180E0D502D0BE03B009C560A /* DetailsViewUITests.swift */,
 				E8324E9D262076EE00FD2124 /* Info.plist */,
 			);
 			path = CocktailBookUITests;
@@ -280,6 +354,17 @@
 				E8324EC726207B6100FD2124 /* CocktailsAPIError.swift in Sources */,
 				E8324E7A262076EB00FD2124 /* AppDelegate.swift in Sources */,
 				E8324EAD2620774B00FD2124 /* MainScreenViewController.swift in Sources */,
+				180E0D412D0BDF58009C560A /* FavoritesViewModel.swift in Sources */,
+				180E0D422D0BDF58009C560A /* NavigationBarModifier.swift in Sources */,
+				180E0D432D0BDF58009C560A /* DetailsView.swift in Sources */,
+				180E0D442D0BDF58009C560A /* ListViewModel.swift in Sources */,
+				180E0D452D0BDF58009C560A /* Cocktail.swift in Sources */,
+				180E0D462D0BDF58009C560A /* CocktailRow.swift in Sources */,
+				180E0D472D0BDF58009C560A /* CocktailFilter.swift in Sources */,
+				180E0D482D0BDF58009C560A /* ListView.swift in Sources */,
+				180E0D492D0BDF58009C560A /* ActivityIndicator.swift in Sources */,
+				180E0D4A2D0BDF58009C560A /* LoadingIndicator.swift in Sources */,
+				180E0D4B2D0BDF58009C560A /* DetailsViewModel.swift in Sources */,
 				E8324E7C262076EB00FD2124 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +374,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8324E91262076EE00FD2124 /* CocktailBookTests.swift in Sources */,
+				180E0D4E2D0BE007009C560A /* ListViewModelTests.swift in Sources */,
+				180E0D4F2D0BE007009C560A /* DetailsViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8324E9C262076EE00FD2124 /* CocktailBookUITests.swift in Sources */,
+				180E0D512D0BE03B009C560A /* DetailsViewUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
